@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+$utilities: (
+    "font-size": (
+        responsive: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes
+    )
+);
+
+
+@import "utilities/borders";
+@import "utilities/position";
+@import "utilities/helper";
+@import "utilities/opacity";
+@import "utilities/overlay";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/text";
+@import "utilities/z-index";

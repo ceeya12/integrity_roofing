@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+    text-transform: uppercase;
+}
+
+/* Button sizes
+   ========================================================================== */
+.btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-base, $btn-border-radius-lg);
+}
+  
+.btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-base, $btn-border-radius-sm);
+}

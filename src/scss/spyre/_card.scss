@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Card
+   ========================================================================== */
+
+.card-info {
+    &.active,
+    &:hover {
+        border-color: $primary;
+        background-color: $primary;
+        cursor: pointer;
+        
+        * {
+            color: $white;
+        }
+    }
+}
+
+// Card deck
+
+.card-deck {
+    .card {
+      margin-bottom: $card-deck-margin;
+    }
+  
+    @include media-breakpoint-up(sm) {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: -$card-deck-margin;
+        margin-left: -$card-deck-margin;
+    
+        .card {
+            // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+            flex: 1 0 0%;
+            margin-right: $card-deck-margin;
+            margin-bottom: 0; // Override the default
+            margin-left: $card-deck-margin;
+        }
+    }
+}
+
+
+// Card columns
+
+.card-columns {
+    .card {
+        margin-bottom: $card-columns-margin;
+    }
+
+    @include media-breakpoint-up(sm) {
+        column-count: $card-columns-count;
+        column-gap: $card-columns-gap;
+        orphans: 1;
+        widows: 1;
+
+        .card {
+            display: inline-block; // Don't let them vertically span multiple columns
+            width: 100%; // Don't let their width change
+        }
+    }
+}
