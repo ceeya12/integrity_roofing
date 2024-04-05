@@ -47,7 +47,7 @@ const touchBtn = document.getElementById("touchBtn");
 const scrollToContact = function (event) {
   event.preventDefault();
   //window.scrollTo(X,Y)
-  window.scrollTo(0, 4335);
+  window.scrollTo(0, 5000);
 };
 
 contactUS.addEventListener("click", scrollToContact);
