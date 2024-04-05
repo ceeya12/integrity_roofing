@@ -1182,13 +1182,17 @@
                   <div class="row justify-content-center">
                     <div class="col">
                       <input
+                        id="firstName"
                         type="text"
+                        type="firstName"
                         class="form-control mt-3"
                         placeholder="First Name"
                       />
                     </div>
                     <div class="col">
                       <input
+                        id="lastName"
+                        type="lastName"
                         class="form-control mt-3"
                         type="text"
                         placeholder="Last Name"
@@ -1198,6 +1202,8 @@
                   <div class="row justify-content-center">
                     <div class="col">
                       <input
+                        id="phoneNumber"
+                        type="phoneNumber"
                         type="text"
                         class="form-control mt-3"
                         placeholder="Phone Number"
@@ -1205,6 +1211,8 @@
                     </div>
                     <div class="col">
                       <input
+                        id="email"
+                        type="email"
                         class="form-control mt-3"
                         type="text"
                         placeholder="Email"
@@ -1214,6 +1222,8 @@
 
                   <div class="row justify-content-center">
                     <input
+                      id="zipCode"
+                      type="zipCode"
                       class="form-control mt-3 w-25"
                       type="text"
                       placeholder="Zip Code"
@@ -1221,6 +1231,8 @@
                   </div>
                   <div class="row justify-content-center">
                     <textarea
+                      id="message"
+                      type="message"
                       class="form-control mt-3 w-75"
                       name="message"
                       id=""
@@ -1231,7 +1243,11 @@
                   </div>
 
                   <div class="row justify-content-center mt-3">
-                    <button type="button" class="btn btn-primary w-50">
+                    <button
+                      id="submit"
+                      type="button"
+                      class="btn btn-primary w-50"
+                    >
                       Submit<i class="zmdi zmdi-mail-send ms-2"></i>
                     </button>
                   </div>
@@ -1382,7 +1398,18 @@
     <script src="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="../assets/vendor/aos/dist/aos.js"></script>
 
+    <!-- emailjs servcies -->
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "8RLcmfuKIR3C3NwnC",
+        });
+      })();
+    </script>
+
     <!-- Theme Javascripts -->
     <script src="../assets/js/theme.js"></script>
+    <script src="dist/assets/js/email.js"></script>
   </body>
 </html>
