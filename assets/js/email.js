@@ -36,3 +36,16 @@ submitBtn.addEventListener("click", function (e) {
 
   sendMail();
 });
+
+/////////////////////
+//Functionality to click on "Get in touch button" and redirect to Contact Request
+//main landing page
+
+const contactUS = document.getElementById("contactClick");
+const touchBtn = document.getElementById("touchBtn");
+
+const scrollToContact = function (event) {
+  event.preventDefault();
+  //window.scrollTo(X,Y)
+  window.scrollTo(0, 4335);
+};
