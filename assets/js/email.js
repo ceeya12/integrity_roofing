@@ -49,3 +49,6 @@ const scrollToContact = function (event) {
   //window.scrollTo(X,Y)
   window.scrollTo(0, 4335);
 };
+
+contactUS.addEventListener("click", scrollToContact);
+touchBtn.addEventListener("click", scrollToContact);
