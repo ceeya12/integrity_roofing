@@ -12,7 +12,9 @@ const scrollToContact = function (event) {
   window.scrollTo(0, 700);
 };
 
-redTouchBtn.addEventListener("click", scrollToContact);
+if (redTouchBtn) {
+  redTouchBtn.addEventListener("click", scrollToContact);
+}
 
 const submitBtnContact = document.getElementById("submitContact");
 
