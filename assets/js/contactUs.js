@@ -7,7 +7,7 @@
 const redTouchBtn = document.getElementById("contactUsBtn");
 
 const scrollToContact = function (event) {
-  //   event.preventDefault();
+  event.preventDefault();
   //window.scrollTo(X,Y)
   window.scrollTo(0, 700);
 };
