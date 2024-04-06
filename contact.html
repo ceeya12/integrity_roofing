@@ -335,27 +335,47 @@
                     <input
                       type="text"
                       class="form-control"
-                      id="name"
-                      placeholder="Full name"
+                      id="firstNameContact"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastNameContact"
+                      placeholder="Last Name"
                     />
                   </div>
                   <div class="form-group mb-4">
                     <input
                       type="email"
                       class="form-control"
-                      id="email"
+                      id="email_id"
                       placeholder="Email address"
+                    />
+                  </div>
+                  <div class="form-group mb-4">
+                    <input
+                      type="phone"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Phone"
                     />
                   </div>
                   <div class="form-group mb-4">
                     <textarea
                       class="form-control"
                       rows="8"
-                      id="message"
+                      id="messageId"
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <button type="button" class="btn btn-primary w-100">
+                  <button
+                    id="submitContact"
+                    type="button"
+                    class="btn btn-primary w-100"
+                  >
                     Send<i class="zmdi zmdi-mail-send ms-2"></i>
                   </button>
                 </form>
@@ -495,7 +515,21 @@
     <script src="../assets/vendor/aos/dist/aos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz6oy9q_PqCN73d-TKpvJvwt_RUsjrB-4"></script>
 
+    <!-- email js services -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "8RLcmfuKIR3C3NwnC",
+        });
+      })();
+    </script>
+
     <!-- Theme Javascripts -->
+    <script src="../assets/js/contactUs.js"></script>
     <script src="../assets/js/theme.js"></script>
   </body>
 </html>
