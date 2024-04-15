@@ -27881,8 +27881,8 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
 }
 .owl-carousel .owl-nav {
   position: absolute;
-  bottom: 2%;
-  right: 35%;
+  bottom: 0;
+  right: 0;
   -webkit-tap-highlight-color: transparent;
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
@@ -27890,13 +27890,13 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
   width: 3.125rem;
   height: 3.125rem;
   line-height: 3.125rem;
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.7);
   color: rgba(31, 39, 73, 0.8);
   font-size: 1.3125rem;
   cursor: pointer;
 }
 .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.92);
   color: #1f2749;
   text-decoration: none;
 }
@@ -28081,40 +28081,5 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
  * Define you custome style here.
  * It will be merged with the default style.
  */
-
- /* Index Page  */
-
-.banner-oklahoma {
-  display: none;
-  color: red;
-  background-color: #182463;
-  animation-name: moveInLeft;
-  animation-timing-function: ease-out;
-  animation-duration: 5s;
-  animation-iteration-count: 3;
-}
-
-@keyframes moveInLeft {
-  0% {
-    display: block;
-    opacity: 1;
-    transform: translateX(-1000px);
-  }
-  50% {
-    display: block;
-    transform: translateX(-1000px);
-  }
-  100% {
-    display: block;
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .banner-oklahoma {
-    margin-top: -200px;
-  }
-}
 
 /*# sourceMappingURL=theme.css.map */
