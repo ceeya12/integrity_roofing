@@ -27881,8 +27881,8 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
 }
 .owl-carousel .owl-nav {
   position: absolute;
-  bottom: 2%;
-  right: 35%;
+  bottom: 0;
+  right: 0;
   -webkit-tap-highlight-color: transparent;
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
@@ -27890,13 +27890,13 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
   width: 3.125rem;
   height: 3.125rem;
   line-height: 3.125rem;
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.7);
   color: rgba(31, 39, 73, 0.8);
   font-size: 1.3125rem;
   cursor: pointer;
 }
 .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.92);
   color: #1f2749;
   text-decoration: none;
 }
@@ -28081,11 +28081,33 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
  * Define you custome style here.
  * It will be merged with the default style.
  */
+.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 2%;
+  right: 35%;
+  -webkit-tap-highlight-color: transparent;
+}
 
-/*# sourceMappingURL=theme.css.map */
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background-color: red;
+  color: rgba(31, 39, 73, 0.8);
+  font-size: 1.3125rem;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: red;
+  color: #1f2749;
+  text-decoration: none;
+}
 
 /* Index Page  */
-
 .banner-oklahoma {
   display: none;
   color: red;
@@ -28112,9 +28134,10 @@ div.code-toolbar > .toolbar .toolbar-item span:hover {
     transform: translate(0);
   }
 }
-
 @media screen and (max-width: 500px) {
   .banner-oklahoma {
     margin-top: -200px;
   }
 }
+
+/*# sourceMappingURL=theme.css.map */

@@ -6,3 +6,62 @@
  * Define you custome style here.
  * It will be merged with the default style.
  */
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 2%;
+  right: 35%;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background-color: red;
+  color: rgba(31, 39, 73, 0.8);
+  font-size: 1.3125rem;
+  cursor: pointer;
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: red;
+  color: #1f2749;
+  text-decoration: none;
+}
+
+/* Index Page  */
+
+.banner-oklahoma {
+  display: none;
+  color: red;
+  background-color: #182463;
+  animation-name: moveInLeft;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes moveInLeft {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-1000px);
+  }
+  50% {
+    display: block;
+    transform: translateX(-1000px);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-oklahoma {
+    margin-top: -200px;
+  }
+}
